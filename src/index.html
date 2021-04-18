@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+
+<head>
+  <title>Matrix sub-levels</title>
+  <link rel="stylesheet" href="https://unpkg.com/style.css">
+
+  <style>
+    #root {
+      width: 1200px;
+      margin: 0 auto;
+      --junior-bg-color: palegreen;
+      --middle-bg-color: yellowgreen;
+      --senior-bg-color: coral;
+      --expert-bg-color: lightseagreen;
+    }
+
+    /* Junior */
+    table.junior-l1 tr td:nth-child(2),
+    table.junior-l1 tr th:nth-child(2) {
+      background: var(--junior-bg-color);
+    }
+
+    table.junior-l2 tr td:nth-child(3),
+    table.junior-l2 tr th:nth-child(3) {
+      background: var(--junior-bg-color);
+    }
+
+    table.junior-l3 tr td:nth-child(4),
+    table.junior-l3 tr th:nth-child(4) {
+      background: var(--junior-bg-color);
+    }
+
+    /* Middle */
+    table.middle-l1 tr td:nth-child(5),
+    table.middle-l1 tr th:nth-child(5) {
+      background: var(--middle-bg-color);
+    }
+
+    table.middle-l2 tr td:nth-child(6),
+    table.middle-l2 tr th:nth-child(6) {
+      background: var(--middle-bg-color);
+    }
+
+    table.middle-l3 tr td:nth-child(7),
+    table.middle-l3 tr th:nth-child(7) {
+      background: var(--middle-bg-color);
+    }
+
+    /* Senior */
+    table.senior-l1 tr td:nth-child(8),
+    table.senior-l1 tr th:nth-child(8) {
+      background: var(--senior-bg-color);
+    }
+
+    table.senior-l2 tr td:nth-child(9),
+    table.senior-l2 tr th:nth-child(9) {
+      background: var(--senior-bg-color);
+    }
+
+    table.senior-l3 tr td:nth-child(10),
+    table.senior-l3 tr th:nth-child(10) {
+      background: var(--senior-bg-color);
+    }
+
+    /* Expert */
+    table.expert tr td:nth-child(11),
+    table.expert tr th:nth-child(11) {
+      background: var(--expert-bg-color);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
