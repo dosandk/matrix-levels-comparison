@@ -13,6 +13,18 @@
       --middle-bg-color: yellowgreen;
       --senior-bg-color: coral;
       --expert-bg-color: lightseagreen;
+      --z-index-1: 100;
+      --z-index-2: 200;
+    }
+
+    table tr td,
+    table tr th {
+      cursor: pointer;
+    }
+
+    table tr td:nth-child(1),
+    table tr th:nth-child(1) {
+      cursor: default;
     }
 
     /* Junior */
@@ -67,6 +79,32 @@
     table.expert tr td:nth-child(11),
     table.expert tr th:nth-child(11) {
       background: var(--expert-bg-color);
+    }
+
+    .modal {
+      width: 100%;
+      height: 100vh;
+      top: 50%;
+      transform: translateY(-50%);
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0,0,0, 0.4);
+      z-index: var(--z-index-1);
+    }
+
+    .modal.hidden {
+      display: none
+    }
+
+    .modal_content {
+      width: calc(100% - 80px);
+      height: calc(100% - 80px);
+      padding: 20px 40px;
+      background-color: #fefefe;
+      overflow-y: scroll;
+      z-index: var(--z-index-2);
     }
   </style>
 </head>
